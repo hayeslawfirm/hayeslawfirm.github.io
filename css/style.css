@@ -73,3 +73,19 @@ img#headshot {
     float: left;
     padding: 12px 16px 6px 8px;
 }
+
+ul {
+    list-style: none;
+    margin-left: 6px;
+    margin-bottom: .5rem;
+}
+
+li {
+    font-size: 10pt;
+    padding-bottom: 10px;
+}
+
+span.talk-venue {
+    font-size: 9pt;
+    font-style: italic;
+}
