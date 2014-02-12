@@ -1,3 +1,12 @@
+body {
+    background: url(/img/tile.png) repeat #F8F8F8;
+}
+
+#main-content {
+    background: white;
+    box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
+}
+
 a {
     color: #264083;
 }
@@ -17,16 +26,12 @@ h2 {
     font-style: italic;
 }
 
-div#header {
+header {
     padding-bottom: .75em;
     border-bottom: 1px solid #CE1E1E;
 }
 
-div#disclaimer {
-    border-top: 1px solid #D7E3F7;
-}
-
-div#info {
+#principals, #sidebar {
     padding-top: 3em;
 }
 
@@ -64,8 +69,9 @@ dl#contact dd, dl#links dd {
     margin-bottom: .10rem;
 }
 
-div#disclaimer {
-    margin-top: 3em;
+footer {
+    border-top: 1px solid #D7E3F7;
+    padding-top: 3em;
 }
 
 img#headshot {
