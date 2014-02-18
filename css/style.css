@@ -37,12 +37,12 @@ h2 {
 }
 
 header {
-    padding-bottom: .75em;
+    padding-bottom: .50em;
     border-bottom: 3px double #ce1e1e;/*#CE1E1E;*/
 }
 
 #principals, #sidebar {
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 h3 {
