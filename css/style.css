@@ -37,12 +37,16 @@ h2 {
 }
 
 header {
-    padding-bottom: .50em;
+    padding-bottom: .5em;
     border-bottom: 3px double #ce1e1e;/*#CE1E1E;*/
 }
 
 #principals, #sidebar {
     padding-top: 1em;
+}
+
+#principals {
+	padding-right: 32px;
 }
 
 h3 {
@@ -59,7 +63,7 @@ h4 {
 }
 
 div.sidebar {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 p {
