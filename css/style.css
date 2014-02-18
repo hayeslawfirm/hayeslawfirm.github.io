@@ -1,10 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Balthazar);
+@import url(http://fonts.googleapis.com/css?family=Lora:400italic:700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400);
+
 body {
     background: url(/img/tile.png) repeat #F8F8F8;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #main-content {
     background: white;
-    box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
+    box-shadow: 5px 0 5px -5px rgba(0,0,0,.2), -5px 0 5px -5px rgba(0,0,0,.2);
 }
 
 a {
@@ -18,17 +24,21 @@ h1 {
     line-height: 1;
     padding-top: .35em;
     padding-bottom: 0;
+	font-family: 'Lora', serif;
+    font-style: italic;
+	font-weight: bold;
 }
 
 h2 {
     text-align: center;
     font-size: 14px;
     font-style: italic;
+	font-family: 'Lora', serif;
 }
 
 header {
     padding-bottom: .75em;
-    border-bottom: 1px solid #CE1E1E;
+    border-bottom: 3px double #ce1e1e;/*#CE1E1E;*/
 }
 
 #principals, #sidebar {
@@ -38,11 +48,24 @@ header {
 h3 {
     padding-left: 6px;
     border-bottom: 1px solid #D7E3F7;
+	font-family: 'Balthazar', serif;
+}
+
+h4 {
+	font-size: 24pt;
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	font-style: italic
 }
 
 div.sidebar {
     margin-top: 2em;
 }
+
+p {
+	font-size: 14pt;
+}
+
 
 p.disclaimer {
     color: #CCBBCC;
@@ -71,7 +94,8 @@ dl#contact dd, dl#links dd {
 
 footer {
     border-top: 1px solid #D7E3F7;
-    padding-top: 3em;
+    margin-top: 15px;
+    padding-top: 10px;
 }
 
 img#headshot {
@@ -93,4 +117,8 @@ li {
 span.talk-venue {
     font-size: 9pt;
     font-style: italic;
+}
+
+div#main-content {
+	padding: 0 20px 0 15px;
 }
