@@ -65,7 +65,7 @@ footer p {
 }
 
 .row {
-    padding-top: 56px;
+    padding: 32px 0;
 }
 
 .width-100 {
@@ -97,6 +97,10 @@ footer p {
 
 #hero-logo {
     padding: 36px 0;
+}
+
+#contact a {
+    color: #1e376d;
 }
 
 ul {

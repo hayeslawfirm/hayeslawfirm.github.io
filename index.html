@@ -12,10 +12,12 @@
     <body>
         <div id="hero" class="width-100 dark-blue-bg">
             <nav data-magellan-expedition="fixed">
-                <img src="/img/logo.png">
+                <a href="/"><img src="/img/logo.png"></a>
                 <dl class="sub-nav">
                     <dd data-magellan-arrival="about"><a data-scroll href="#about">About</a></dd>
                     <dd data-magellan-arrival="services"><a data-scroll href="#services">Services</a></dd>
+                    <dd data-magellan-arrival="pricing"><a data-scroll href="#pricing">Pricing</a></dd>
+                    <dd data-magellan-arrival="talks"><a data-scroll href="#talks">Talks</a></dd>
                     <dd data-magellan-arrival="contact"><a data-scroll href="#contact">Contact</a></dd>
                 </dl>
             </nav>
@@ -29,14 +31,17 @@
         <div class="width-100 tile-bg">
             <div id="about" data-magellan-destination="about" class="row">
                 <h1 class="text-center">Hayes Law Firm represents early and growth-stage technology startups</h1>
-                <p class="large-4 columns">
+                <h5 class="large-12 columns">ABOUT THE FIRM</h5>
+                <p class="large-6 columns">
                     Hayes Law Firm, PLLC is a boutique corporate law practice that focuses on the legal needs of early-stage technology start-ups. The Firm was founded in 2013 to provide an affordable and flexible option to companies and individuals looking to move away from the costly and cumbersome large law firm model.
                 </p>
-                <p class="large-4 columns">
-                    Benjamin Hayes, the founding principal of the Firm, has worked with law firms in Houston, Washington, D.C., New York, Tokyo, and Osaka in fields including international intellectual property licensing contracts, insurance litigation, bankruptcy, and large-scale products liability and securities litigation. He is also General Counsel of Big Apple Py, Inc., a New York Not-for-Profit corporation (with pending federal 501(c)(3) status) that promotes Python programming language education and community in New York City through running the NYC Python and Flask-NYC Meetup groups. Ben is admitted to practice law in New York and is a member of the New York State Bar Association, the New York County Lawyers’ Association, the Japanese American Lawyers Network, and the Roppongi Bar Association.
-                </p>
-                <p class="large-4 columns">
+                <p class="large-6 columns">
                     Hayes Law Firm, PLLC provides a broad range of services related to technology start-up formation and operation including entity organization, creating equity plans and handling employment issues, and negotiating and obtaining financing.
+                </p>
+
+                <h5 class="large-12 columns">ABOUT THE PRINCIPLE</h5>
+                <p class="large-12 columns">
+                    Benjamin Hayes, the founding principal of the Firm, has worked with law firms in Houston, Washington, D.C., New York, Tokyo, and Osaka in fields including international intellectual property licensing contracts, insurance litigation, bankruptcy, and large-scale products liability and securities litigation. He is also General Counsel of Big Apple Py, Inc., a New York Not-for-Profit corporation (with pending federal 501(c)(3) status) that promotes Python programming language education and community in New York City through running the NYC Python and Flask-NYC Meetup groups. Ben is admitted to practice law in New York and is a member of the New York State Bar Association, the New York County Lawyers’ Association, the Japanese American Lawyers Network, and the Roppongi Bar Association.
                 </p>
             </div>
 
@@ -68,7 +73,7 @@
                 </div>
             </div>
             
-            <div class="row">
+            <div id="pricing" data-magellan-destination="pricing" class="row">
                 <h1 class="text-center">Pricing</h1>
                 <p>The Firm is committed to helping start-ups achieve their goals, not make them go broke. We work with a variety of clients from VC-funded startups to bootstrapping pre-seeds to non-profits. We know that everyone's financial situation is different, and strive to provide flexible pricing and payment structures that make good business sense for all of our clients. We strive to combine the high-quality work product and professionalism of a big firm with the client-centered personal interaction and competitive hourly rates of a boutique.</p>
                 <p>Many of our most common services are available at flat rates to help take the guesswork out of budgeting. For larger engagements, we offer partial deferred payment plans or other arrangements to meet your needs. For ongoing engagements, we offer outsourced general counsel services subscription packages. For a monthly fee, you can retain us to review and draft contracts, provide legal advice, and act as your company's general counsel.</p>
@@ -78,7 +83,7 @@
         <img class="width-100" alt="Charging Bull" src="/img/bull.jpg">
 
         <div class="width-100 tile-bg">
-            <div class="row">
+            <div id="talks" data-magellan-destination="talks" class="row">
                 <div class="large-8 columns">
                     <h1>Talks</h1>
                     <ul>
@@ -108,6 +113,9 @@
                     </ul>
                 </div>
                 <img class="large-8 columns" src="/img/map.png">
+            </div>
+
+            <div class="row">
                 <p>Hayes Law Firm is located in the Financial District in a building directly in front of Wall Street's famous Charging Bull Statue. Our office is conveniently located within minutes of Bowling Green station on the 4 and 5 lines, Rector Street station on the 1 and R lines, Broad Street on the J line, and Fulton Street station on the 2, 3, A, C, J, and Z lines.</p>
             </div>
         </div>
@@ -123,7 +131,7 @@
         <script src="/js/smooth-scroll.js"></script>
         <script>
             $(document).foundation();
-            smoothScroll.init();
+            smoothScroll.init({offset: $('nav').outerHeight()});
         </script>
     </body>
 </html>
