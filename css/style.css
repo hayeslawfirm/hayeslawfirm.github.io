@@ -35,29 +35,54 @@ h2 {
     font-size: 20px;
 }
 
-.sub-nav {
-    display: inline-block;
-    vertical-align: middle;
+.f-topbar-fixed {
+    padding-top: inherit !important;
 }
 
-.sub-nav dd {
-    float: inherit;
+.top-bar {
+    /*height: 100px;*/
+    /*line-height: 100px;*/
+    background-color: white;
 }
 
-.sub-nav dd a,
-.sub-nav dd a:hover,
-.sub-nav dd.active a,
-.sub-nav dd.active a:hover {
-    font-size: 30px;
-    font-weight: 100;
-    background: none;
+.top-bar.expanded .title-area {
+    background-color: white;
+}
+
+.top-bar ul {
+    /*line-height: 100px;*/
+}
+
+.top-bar .name {
+    /*height: 100px;*/
+}
+
+.top-bar .name h1 {
+    /*line-height: 100px;*/
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background-color: white;
     color: #1e376d;
-    padding: 1.2em;
+    /*font-size: 30px;*/
+    /*font-weight: 100;*/
+    /*line-height: 100px;*/
 }
 
-.sub-nav dd.active a,
-.sub-nav dd a:hover {
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: white;
+    color: #1e376d;
     text-decoration: underline;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    color: #1e376d;
+    /*line-height: 100px;*/
+}
+
+.top-bar .toggle-topbar.menu-icon a:after {
+    box-shadow: 0px 10px 0px 1px #1e376d, 0px 16px 0px 1px #1e376d, 0px 22px 0px 1px #1e376d;
+    /*line-height: 100px;*/
 }
 
 footer p {
@@ -87,7 +112,7 @@ footer p {
     background: url('/img/tile.png') repeat;
 }
 
-.white {
+.white, .white:hover, .white:active, .white:visited {
     color: white;
 }
 
@@ -96,7 +121,7 @@ footer p {
 }
 
 #hero-logo {
-    padding: 36px 0;
+    padding: 72px 0 36px 0;
 }
 
 #contact a {

@@ -11,19 +11,30 @@
     </head>
     <body>
         <div id="hero" class="width-100 dark-blue-bg">
-            <nav data-magellan-expedition="fixed">
-                <a href="/"><img src="/img/logo.png"></a>
-                <dl class="sub-nav">
-                    <dd data-magellan-arrival="about"><a data-scroll href="#about">About</a></dd>
-                    <dd data-magellan-arrival="services"><a data-scroll href="#services">Services</a></dd>
-                    <dd data-magellan-arrival="pricing"><a data-scroll href="#pricing">Pricing</a></dd>
-                    <dd data-magellan-arrival="talks"><a data-scroll href="#talks">Talks</a></dd>
-                    <dd data-magellan-arrival="contact"><a data-scroll href="#contact">Contact</a></dd>
-                </dl>
-            </nav>
+            <div class="fixed">
+                <nav class="top-bar" data-topbar>
+                    <ul class="title-area">
+                        <li class="name">
+                            <h1><a href="#"><img src="/img/logo.png" style="height: 45px;"></a></h1>
+                        </li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                    <ul>
+
+                    <section class="top-bar-section">
+                        <ul class="right">
+                            <li><a data-scroll href="#about">About</a></li>
+                            <li><a data-scroll href="#services">Services</a></li>
+                            <li><a data-scroll href="#pricing">Pricing</a></li>
+                            <li><a data-scroll href="#talks">Talks</a></li>
+                            <li><a data-scroll href="#contact">Contact</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
 
             <div class="text-center"><img id="hero-logo" src="/img/h.png" alt="H"></div>
-            <p class="white text-center">Hayes Law Firm, PLLC &middot; 25 Broadway, 10F &middot; NYC &middot; 212 380 6513 &middot; info@hayeslf.com</p>
+            <p class="white text-center">Hayes Law Firm, PLLC &middot; 25 Broadway, 10F &middot; NYC &middot; 212 380 6513 &middot; <a class="white" href="mailto:info@hayeslf.com">info@hayeslf.com</a></p>
         </div>
 
         <img class="width-100" alt="Benjamin Hayes" src="/img/ben.jpg">
