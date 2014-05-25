@@ -118,6 +118,16 @@ footer p {
 
 #hero {
     height: 100%;
+    position: relative;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 40px;
+}
+
+#blog {
+    padding: 36px 0;
 }
 
 #hero-logo {
