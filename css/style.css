@@ -102,17 +102,18 @@ footer p {
     position: relative;
 }
 
-#arrow {
-    position: absolute;
-    bottom: 40px;
-}
-
 #blog {
     padding: 36px 0;
 }
 
 #hero-logo {
     padding: 72px 0 36px 0;
+    max-width: 75%;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 5%;
 }
 
 #contact a {
