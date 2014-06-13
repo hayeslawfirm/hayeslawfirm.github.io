@@ -14,7 +14,8 @@
                 <li><a data-scroll href="{{ include.home_prefix }}#pricing">Pricing</a></li>
                 <li><a data-scroll href="{{ include.home_prefix }}#talks">Talks</a></li>
                 <li><a data-scroll href="{{ include.home_prefix }}#contact">Contact</a></li>
-                <li><a href="/blog/">Blog</a></li>
+                {% comment %}Only show the blog link if there are posts{% endcomment %}
+                {% if site.posts.size > 0 %}<li><a href="/blog/">Blog</a></li>{% endif %}
             </ul>
         </section>
     </nav>
